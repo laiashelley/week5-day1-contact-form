@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="formulario.css" />
+    <title>Contactanos!</title>
+  </head>
+
+  <body>
+    <div class="principal-container">
+    <div class="formulario">
+      <h1>Contactanos!</h1>
+      <p>Escríbenos y nos pondremos en contacto contigo.</p> 
+      <form action="recibido.html" method="get">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" placeholder="Escribe aquí tu nombre." />
+
+        <label for="lastname">Apellidos *</label>
+        <input type="text" id="lastname" name="lastname" required placeholder="Escribe aquí tu apellido." />
+
+        <label for="age">Edad *</label>
+        <input type="number" id="age" name="age" min="18" max="50" required placeholder="Selecciona tu edad."/>
+
+        <label for="email">Correo electronico *</label>
+        <input type="email" id="email" name="email" required placeholder="Escribe aquí tu correo electrónico."/>
+
+        <label for="asunto">Asunto *</label>
+        <input type="text" id="asunto" name="asunto" required placeholder="¿Qué quieres preguntar?"/>
+
+        <label for="textarea">Comentarios</label>
+        <textarea name="comments" id="comments" cols="30" rows="10" maxlength="150" name="comments" placeholder="Danos más detalles."></textarea>
+
+        <input type="submit" />
+      </form>
+      <p>* Los campos son obligatorios.</p>
+    </div>
+  </div>
+  </body>
+</html>
